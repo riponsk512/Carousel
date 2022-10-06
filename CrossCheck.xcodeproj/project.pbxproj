@@ -13,6 +13,7 @@
 		5D23BD1328EF1B7C00CD0523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D23BD1128EF1B7C00CD0523 /* Main.storyboard */; };
 		5D23BD1528EF1B7E00CD0523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D23BD1428EF1B7E00CD0523 /* Assets.xcassets */; };
 		5D23BD1828EF1B7E00CD0523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D23BD1628EF1B7E00CD0523 /* LaunchScreen.storyboard */; };
+		5D23BD2228EF2ADA00CD0523 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D23BD2128EF2ADA00CD0523 /* iCarousel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		5D23BD1428EF1B7E00CD0523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D23BD1728EF1B7E00CD0523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D23BD1928EF1B7E00CD0523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D23BD1F28EF2ADA00CD0523 /* CrossCheck-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrossCheck-Bridging-Header.h"; sourceTree = "<group>"; };
+		5D23BD2028EF2ADA00CD0523 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		5D23BD2128EF2ADA00CD0523 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		5D23BD0A28EF1B7C00CD0523 /* CrossCheck */ = {
 			isa = PBXGroup;
 			children = (
+				5D23BD2028EF2ADA00CD0523 /* iCarousel.h */,
+				5D23BD2128EF2ADA00CD0523 /* iCarousel.m */,
 				5D23BD0B28EF1B7C00CD0523 /* AppDelegate.swift */,
 				5D23BD0D28EF1B7C00CD0523 /* SceneDelegate.swift */,
 				5D23BD0F28EF1B7C00CD0523 /* ViewController.swift */,
@@ -63,6 +69,7 @@
 				5D23BD1428EF1B7E00CD0523 /* Assets.xcassets */,
 				5D23BD1628EF1B7E00CD0523 /* LaunchScreen.storyboard */,
 				5D23BD1928EF1B7E00CD0523 /* Info.plist */,
+				5D23BD1F28EF2ADA00CD0523 /* CrossCheck-Bridging-Header.h */,
 			);
 			path = CrossCheck;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 				TargetAttributes = {
 					5D23BD0728EF1B7C00CD0523 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -139,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D23BD1028EF1B7C00CD0523 /* ViewController.swift in Sources */,
+				5D23BD2228EF2ADA00CD0523 /* iCarousel.m in Sources */,
 				5D23BD0C28EF1B7C00CD0523 /* AppDelegate.swift in Sources */,
 				5D23BD0E28EF1B7C00CD0523 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NB5B4D8982;
@@ -295,6 +305,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +314,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ripon.CrossCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CrossCheck/CrossCheck-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NB5B4D8982;
@@ -323,6 +337,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ripon.CrossCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CrossCheck/CrossCheck-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
